@@ -1,0 +1,142 @@
+main {
+  height: 70vh;
+  /*padding: 10vh 10vw;*/
+  /*border: 1px solid red;*/
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+}
+
+.page {
+  width: 50%;
+  height: 100%;
+  border: 3px solid black;
+  border-right-width: 0;
+}
+
+.page:nth-of-type(2) {
+  border-left-width: 0;
+  border-right-width: 3px;
+}
+
+form {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0 100px;
+  opacity: 0;
+  transition: opacity 0.24s linear 0.2s;
+}
+
+h1,
+.change p {
+  margin-bottom: 30px;
+  font: 900 4rem "monospace", "sans-serif";
+}
+
+.error {
+  font: 900 1.3rem "monospace", "sans-serif";
+  color: red;
+}
+
+.otherLogin {
+  margin-bottom: 30px;
+  font: 600 2rem/5rem "monospace", "sans-serif";
+}
+
+.otherLogin a {
+  display: inline-block;
+  width: 5rem;
+  height: 5rem;
+  margin-right: 1rem;
+  border-radius: 50%;
+  text-align: center;
+  background: url(../img/circleBG.png) no-repeat center/100%;
+  color: var(--color1);
+}
+
+p,
+.forget {
+  margin-bottom: 10px;
+  font: 600 1.5rem "monospace", "sans-serif";
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  width: 100%;
+  min-width: 282px;
+  padding: 15px 0;
+  margin-bottom: 15px;
+  text-align: center;
+  font: 600 2.5rem "monospace", "sans-serif";
+  background: url(../img/squareBG.png) no-repeat center/contain;
+}
+
+input[type="submit"],
+button {
+  padding: 3% 10%;
+  margin-top: 20px;
+  border-radius: 5rem;
+  font: 600 1.7rem "monospace", "sans-serif";
+  background: url(../img/btnBG3.png) no-repeat center/contain;
+  cursor: pointer;
+}
+
+.ruleAgree {
+  text-align: center;
+  font: 500 1.2rem "monospace", "sans-serif";
+}
+
+input[type="checkbox"] {
+  width: 1.5rem;
+  height: 1.5rem;
+  vertical-align: top;
+}
+
+.changePage {
+  position: absolute;
+  top: 0;
+  right: 0%;
+  width: 50%;
+  height: inherit;
+  border: 3px solid var(--color1);
+  border-left-width: 0;
+  background: var(--color2);
+  transition: right 0.8s ease-in-out;
+}
+
+.change {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.change p {
+  color: var(--color1);
+}
+
+.current {
+  z-index: 1;
+  opacity: 1;
+}
+
+.change button {
+  background: url(../img/btnBG2.png) no-repeat center/cover;
+}

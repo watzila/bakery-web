@@ -1,0 +1,351 @@
+.description section,
+.recommend,
+.comment {
+  width: 100%;
+  padding: 2rem;
+}
+
+.produce,
+.description,
+.recommend,
+.comment {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 2rem;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 3px 3px 2px #cccccc;
+}
+
+.produce section {
+  width: 50%;
+  /*border: 1px solid hotpink;*/
+}
+
+.previewIMG img {
+  width: 100%;
+  /*height: 100%;*/
+
+  object-fit: cover;
+}
+
+.previewIMG,
+.itemList {
+  width: 100%;
+  padding: 2rem;
+  /*text-align: center;*/
+  /*border: 1px solid red;*/
+}
+
+.itemList li {
+  display: inline-block;
+  margin-right: 1.2rem;
+}
+
+/*商品購買*/
+.produceInfo {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.produce h3 {
+  padding: 0.5rem 0;
+  font: 600 3rem "monospace", "sans-serif";
+  /*border: 1px solid hotpink;*/
+}
+
+.price {
+  align-self: flex-end;
+  margin-top: 1rem;
+  font: 500 3.5rem "monospace", "sans-serif";
+  /*color: red;*/
+  text-shadow: 2px 2px 2px #cccccc;
+  /*border: 1px solid hotpink;*/
+}
+
+.price span {
+  font-weight: 900;
+}
+
+.tag ul {
+  display: flex;
+  padding-bottom: 1.5rem;
+  margin-top: 1rem;
+  border-bottom: 2px solid black;
+}
+
+.tag li {
+  padding: 0.3rem 2rem;
+  margin: 0 1rem;
+  font: 600 1.2rem "monospace", "sans-serif";
+  color: #585858;
+  background: lightblue;
+  border: 1px solid var(--color1);
+}
+
+.introduction {
+  position: relative;
+  padding: 1.5rem 1rem;
+  margin-top: 2rem;
+  letter-spacing: 0.2rem;
+  font: 600 1.3rem/2 "monospace", "sans-serif";
+  background: var(--color2);
+  color: var(--color1);
+}
+
+.introduction::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--color1);
+  transform: translate(5px, 5px);
+}
+
+.buyInfo {
+  margin-top: 2rem;
+  font: 400 1.3rem "monospace", "sans-serif";
+  /*border: 1px solid hotpink;*/
+}
+
+.buyInfo p {
+  display: inline-block;
+  padding: 0.5rem;
+  font: 500 2.5rem "monospace", "sans-serif";
+  border-style: solid;
+  border-width: 4px 2px 2px;
+  border-color: rgb(223, 172, 79) gray gray;
+  border-bottom-color: #fff;
+  transform: translateY(2px);
+}
+
+.buyInfo div {
+  padding: 0 0.5rem;
+  border: 2px solid gray;
+}
+
+.buyInfo dl {
+  margin: 1.5rem 0.3rem;
+}
+
+.buyInfo dt {
+  margin-bottom: 0.8rem;
+  font: 600 1.7rem "monospace", "sans-serif";
+  color: var(--color1);
+}
+
+.buyInfo dd {
+  font: 500 1.4rem "monospace", "sans-serif";
+  text-indent: 2rem;
+  color: var(--color1);
+}
+
+.buyInfo i {
+  margin-right: 0.5rem;
+  color: rgb(143, 98, 0);
+}
+
+/*訂購數量*/
+.buyChoose {
+  display: flex;
+  /*flex-direction: column;*/
+  align-items: center;
+  margin-top: 2rem;
+  font: 600 2rem "monospace", "sans-serif";
+  /*border: 1px solid hotpink;*/
+}
+
+.chooseBox {
+  display: flex;
+  align-items: center;
+  /*border: 1px solid;*/
+}
+
+.chooseBox input[type="text"] {
+  width: 60px;
+  height: 60px;
+  padding: 0.5rem;
+  font: 600 2rem "monospace", "sans-serif";
+  text-align: center;
+  /*background: hotpink;*/
+  border: 1px solid var(--color1);
+}
+
+.chooseBox a {
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  font-size: 1.5rem;
+  color: #000000;
+  /*background: hotpink;*/
+}
+
+.buyChoose input[type="submit"] {
+  height: 100%;
+  padding: 1rem 2rem;
+  margin-left: auto;
+  font: 600 2rem "monospace", "sans-serif";
+  background: url(../img/btnBG2.png) no-repeat center/contain;
+}
+
+/*商品介紹*/
+.description section {
+  background: #ecded570;
+}
+
+.description div {
+  display: flex;
+  width: 100%;
+  padding-bottom: 1.3rem;
+  font: 400 2.5rem "monospace", "sans-serif";
+  border-bottom: 2px solid black;
+}
+
+.description span {
+  margin-left: auto;
+  color: #818181;
+  /*border: 1px solid hotpink;*/
+}
+
+.description table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.3rem;
+  font: 500 1.7rem "monospace", "sans-serif";
+  text-align: left;
+  /*border: 1px solid;*/
+}
+
+.description tr {
+  border-bottom: 1px solid #727272;
+}
+
+.description th,
+.description td {
+  padding: 1rem 0.5rem;
+}
+
+/*推薦*/
+.recommend {
+  flex-direction: column;
+  background: #ebecd570;
+}
+
+.recommend h5 {
+  font: 600 1.7rem "monospace", "sans-serif";
+}
+
+.cardBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*border: 1px solid red;*/
+  padding: 0 5%;
+  margin-top: 2rem;
+}
+
+.recommendCard {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 20%;
+  min-width: 300px;
+  height: 350px;
+  margin: 0 2%;
+  background: #ffffff;
+  box-shadow: 3px 3px 1px #cccccc;
+  border: 1px solid rgb(90, 90, 90);
+  border-radius: 5px;
+}
+
+.recommendCard img {
+  width: 100%;
+  height: 85%;
+  object-fit: contain;
+}
+
+.recommendCard a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.recommendCard:hover {
+  box-shadow: 5px 5px 5px rgb(168, 168, 168);
+  border-width: 2px;
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  /*border: 1px solid;*/
+}
+
+.recommendCard h5,
+.recommendCard span {
+  font: 500 1.5rem "monospace", "sans-serif";
+}
+
+.recommendCard h5 {
+  margin-right: auto;
+}
+
+.arrowL,
+.arrowR {
+  font-size: 5rem;
+  /*border: 1px solid;*/
+  transition: all 0.1s ease-in-out;
+}
+
+.arrowL:hover,
+.arrowR:hover {
+  transform: scale(1.1);
+}
+
+/*評論區*/
+.comment {
+  flex-direction: column;
+  background: #d8d5ec70;
+}
+
+.comment h5 {
+  font: 600 2em "monospace", "sans-serif";
+}
+
+.comment div {
+  margin-left: auto;
+  font: 600 1.7rem "monospace", "sans-serif";
+}
+
+.comment form {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  padding: 2rem 1rem 1rem;
+  margin-top: 0.8rem;
+  border-top: 2px solid #464646;
+}
+
+textarea {
+  width: 90%;
+  height: 150px;
+  padding: 1rem;
+  font: 500 1.8rem "monospace", "sans-serif";
+  letter-spacing: 0.15rem;
+  resize: none;
+}
+
+.comment input[type="submit"] {
+  padding: 1rem;
+  margin-left: auto;
+  font: 600 2rem "monospace", "sans-serif";
+  background: url(../img/circleBG2.png) no-repeat center/contain;
+}

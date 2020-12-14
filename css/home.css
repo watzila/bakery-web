@@ -1,0 +1,253 @@
+.today,
+.produce,
+.about {
+  margin-top: 8rem;
+}
+
+a {
+  color: var(--color1);
+}
+
+/*main {
+  padding: 0;
+}*/
+
+.homePage {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  /*margin-top: 1rem;*/
+  text-align: center;
+  font: 600 5rem "monospace", "sans-serif";
+  border: 1px solid var(--color1);
+  border-radius: 5px;
+  box-shadow: 3px 3px 2px #cccccc;
+  overflow: hidden;
+}
+
+.homeIMGBox {
+  display: flex;
+  align-items: center;
+  animation: Carousel 15s infinite;
+}
+
+.homePage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /*transform: translateX(0%);*/
+}
+
+@keyframes Carousel {
+  0% {
+    transform: translateX(0%);
+  }
+  15% {
+    transform: translateX(0%);
+  }
+  35% {
+    transform: translateX(-100%);
+  }
+  55% {
+    transform: translateX(-100%);
+  }
+  75% {
+    transform: translateX(-200%);
+  }
+  95% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.arrowL,
+.arrowR {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.arrowL {
+  left: 0;
+}
+
+.arrowR {
+  right: 0;
+}
+
+/*今日推薦*/
+
+.todayText {
+  width: 250px;
+  height: 250px;
+  padding: 75px 0;
+  text-align: center;
+  background: var(--color2);
+  /*border: 1px solid;*/
+}
+
+.today h2 {
+  font: 600 2rem/2 "monospace", "sans-serif";
+  color: #ffffff;
+}
+
+.today ul {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  /*background-color: #fff;*/
+  /*border: 1px solid;*/
+}
+
+.today ul li {
+  position: relative;
+  border: 1.5px solid var(--color1);
+  border-radius: 5px;
+  box-shadow: 3px 3px 2px #cccccc;
+}
+
+.today ul li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translate(-7px, -7px);
+  border: 2px solid var(--color2);
+  border-radius: 3px;
+  z-index: -1;
+}
+
+.today h3 {
+  position: absolute;
+  top: 40%;
+  left: 5%;
+  font: 700 1.8rem "monospace", "sans-serif";
+  color: var(--color1);
+}
+
+.today .food {
+  height: 250px;
+  object-fit: contain;
+}
+
+/*商品*/
+.produce {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid var(--color1);
+  border-radius: 5px;
+  box-shadow: 3px 3px 2px #cccccc;
+}
+
+.produce h2 {
+  width: 100%;
+  padding: 2rem;
+  text-align: center;
+  font: 600 3rem "monospace", "sans-serif";
+  /*border: 1px solid;*/
+}
+
+.more {
+  padding: 1rem 3rem;
+  font: 600 1.5rem "monospace", "sans-serif";
+  color: var(--color1);
+  background: url(../img/btnBG.png) no-repeat center/contain;
+}
+
+.produce ul {
+  display: flex;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.produce ul li {
+  width: calc(100% / 3);
+  height: 500px;
+  background: url(../img/produce1.jpg) no-repeat center/cover;
+  /*border: 1px solid;*/
+}
+
+.produce div {
+  position: relative;
+  text-align: center;
+  /*display: inline-block;*/
+  /*border: 1px solid;*/
+}
+
+.produce h3 {
+  padding: 0.8rem 3rem;
+  font: 600 2rem "monospace", "sans-serif";
+  color: var(--color1);
+}
+
+.produce span {
+  font: 600 1.3rem "monospace", "sans-serif";
+  color: var(--color1);
+}
+
+.produce .c {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  /*border: 1px solid red;*/
+}
+
+/*關於我們*/
+.about img {
+  width: 50%;
+  /*height: 100%;*/
+  float: left;
+  margin: 0 5%;
+  border: 1px solid var(--color1);
+  border-radius: 5px;
+  box-shadow: 3px 3px 2px #757575;
+  object-fit: cover;
+}
+
+.about h4 {
+  margin-bottom: 1rem;
+  font: 500 5rem "monospace", "sans-serif";
+  color: var(--color1);
+}
+
+.about h1 {
+  margin-bottom: 2.5rem;
+  font: 700 4rem "monospace", "sans-serif";
+  color: var(--color1);
+}
+
+pre {
+  margin-bottom: 3rem;
+  font: 600 1.5rem/2 "monospace", "sans-serif";
+  color: var(--color1);
+  background-color: var(--color2);
+}
+
+.readMore {
+  position: relative;
+  padding: 1rem 2rem;
+  font: 600 1.8rem "monospace", "sans-serif";
+  border: 2px solid var(--color1);
+  color: var(--color1);
+}
+
+.readMore::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-color: var(--color2);
+  transform: translate(-5px, -5px);
+  z-index: -1;
+}
